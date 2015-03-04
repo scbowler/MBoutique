@@ -1,0 +1,308 @@
+/*
+    =====================================
+    ==             General             ==
+    =====================================
+*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    font: 14px Arial, Helvetica, sans-serif;
+    color: #6a6969;
+}
+
+.col-1-3 {
+	width: 33.33%;
+}
+
+.col-2-3 {
+	width: 66.66%;
+}
+
+.col-1-3,
+.col-2-3 {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+/*
+    =====================================
+    ==              Header             ==
+    =====================================
+*/
+
+.head-img {
+    heigt: 400px;
+    margin-bottom: 40px;
+}
+.nav-bar {
+    height: 72px;
+    background-color: #fffabe;
+    position: relative;
+}
+
+.nav-bar img {
+    position: absolute;
+    top: 18px;
+    left: 40px;
+}
+
+.main-nav {
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    margin-right: 60px;
+}
+
+
+.main-nav li {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 35px;
+}
+
+.main-nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #515151;
+}
+
+.main-nav a:hover {
+    color: #d42551;
+}
+
+/*
+    =====================================
+    ==              Home               ==
+    =====================================
+*/
+
+
+
+.side-img {
+   margin-top: 120px;
+}
+
+.side-img img{
+    position: relative;
+    left: 60px;
+}
+
+.text-content p {
+    font-size: 14px;
+}
+
+.schedule {
+    text-align: center;
+}
+
+.schedule ul {
+    display: inline-block;
+    list-style: none;
+    margin: 50px 6px;
+    text-align: left;
+    padding: 0;
+}
+
+.day li{
+    background-color: #fffabe;
+    height: 35px;
+    width: 126px;
+    font-size: 14px;
+    padding-left: 8px;
+    padding-top: 5px;
+    vertical-align: top;
+    position: relative;
+}
+
+.day li:first-child {
+    padding-top: 12px;
+    height: 70px;
+    line-height: 24px;
+}
+
+.day li img {
+    position: absolute;
+    right: 6px;
+}
+
+#coconut,
+#vanilla,
+#lemon,
+#almond {
+    color: #fff;
+}
+
+#coconut {
+    background-color: #824603;
+}
+
+#vanilla {
+    background-color: #df5277;
+}
+
+#lemon {
+    background-color: #a2304e;
+}
+
+#almond {
+    background-color: #c39005;
+}
+
+/*
+    =====================================
+    ==          Our Macarons           ==
+    =====================================
+*/
+
+.macaron-content {
+    background-image: url(../images/our-macarons-background.png);
+    width: 960px;
+    color: #6a6969;
+}
+
+.macaron-list {
+    display: inline-block;
+}
+
+.macaron-content p:last-child {
+    margin: 85px 0;
+}
+
+/*
+    =====================================
+    ==         gifts & parties         ==
+    =====================================
+*/
+
+.gift-content {
+    background-image: url("../images/gifts-parties-background.png");
+    height: 600px;
+    margin-bottom: 10px;
+        
+}
+
+.top-section {
+    margin-top: 70px;
+    margin-left: 15px;
+}
+
+.top-section a {
+    color: #df5277; 
+    text-decoration: none;
+}
+
+/*
+    =====================================
+    ==            Contact              ==
+    =====================================
+*/
+
+.contact-content {
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.left p {
+    margin-bottom: 25px;
+}
+
+.left a {
+    color: #df5277;
+    text-decoration: none;
+}
+
+.contact-form {
+    border: none;
+    padding-left: 0;
+}
+
+.contact-form input {
+    background-color: #f5f5f5;
+    border: none;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    width: 310px;
+    height: 35px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    width: 310px;
+    height: 70px;
+    background-color: #f5f5f5;
+    border: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.btn {
+    background-color: #f5f5f5;
+    border: none;
+    height: 35px;
+    width: 155px;
+    text-transform: uppercase;
+    margin-left: 155px;
+    color: inherit;
+}
+
+.right img {
+    position: absolute;
+    bottom: 30px;
+    right: 80px
+}
+
+/*
+    =====================================
+    ==             Footer              ==
+    =====================================
+*/
+
+.main-footer {
+    height: 80px;
+    background-color: #df5277;
+    text-align: center;
+    color: white;
+}
+
+.contact-info {
+    position: relative;
+    display: inline-block;
+    margin: 10px 80px;
+    right: 25px;
+}
+
+.contact-info small {
+    font-size: 12px;
+}
+
+.contact-info img {
+    margin: 0 8px;
+}
+
+.copyright {
+    display: block;
+    margin-top: 0;
+    font-size: 11px;
+}
