@@ -31,10 +31,24 @@
                         <textarea name="comments" placeholder="Message"></textarea>
                     </label>
                 </fieldset>
-                <button class="btn">send</button>   
+                <button type="button" id="formBtn" class="btn">send</button>   
            </form><!--
            
            --><div class="right col-1-3">
                <img src="Assets/images/macarons-image.png" alt="multiple colored cartoon style macarons">
            </div>
        </section>
+       
+<script>
+    $("document").ready(function(){
+        console.log("contacts loaded");
+        $("#formBtn").on("click", function(){
+            validate();
+        });
+        
+        $("input").focusout(function(){
+            $("#formBtn").click();
+        })
+        
+    });
+</script>
