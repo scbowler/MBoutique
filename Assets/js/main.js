@@ -56,7 +56,7 @@ function validate(){
                 
                 case "name":
                     input = userInput.val();
-                    regEx = /[a-zA-Z]{2,15} [a-zA-Z]{2,15}/;
+                    regEx = /[a-zA-Z]{3,15} [a-zA-Z]{3,15}/;
                     errorMsg = "^ Example: 'John Smith' ^";
                     break;
                 case "email":
@@ -71,13 +71,13 @@ function validate(){
                     break;
                 case "subject":
                     input = userInput.val();
-                    regEx = /[a-zA-Z].{2,100}/;
-                    errorMsg = "^ Between 2 and 100 Characters ^";
+                    regEx = /[a-zA-Z]{3,50}/;
+                    errorMsg = "^ Between 3 and 50 Characters ^";
                     break;
                 case "comments":
                     input = userInput.val();
-                    regEx = /[\w \d].{2,1000}/;
-                    errorMsg = "^ Between 2 and 1000 Characters. ^";
+                    regEx = /[\w \d]{3,250}/;
+                    errorMsg = "^ Between 3 and 250 Characters. ^";
                     break;
                 default: 
                     regEx = null;
