@@ -1,7 +1,7 @@
 
 <section class="my_container contact-content">
   <div class="head-img">
-       <img src="Assets/images/contact-image.png" alt="Large image displaying various color macarons">
+       <img ng-src="{{ banner }}" alt="Large image displaying various color macarons">
    </div>
    <div class="left col-1-3">
        <h1>Visit us!</h1>
@@ -38,17 +38,3 @@
        <img src="Assets/images/macarons-image.png" alt="multiple colored cartoon style macarons">
    </div>
 </section>
-       
-<script>
-    $("document").ready(function(){
-        
-        console.log("contacts loaded");
-        
-        $("input, textarea").on("keyup", function(){
-            if(!validate($(this))){
-                this.focus();
-            }
-        });
-        
-    });
-</script>
