@@ -1,97 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>MBoutique - Angular</title>
-
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="Assets/js/jquery-2.1.3.min.js"></script>
-
-    <!-- Latest compiled and minified CSS for bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- Latest compiled and minified JavaScript for Bootstrap-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-    <!-- Main CSS file -->
-    <link rel="stylesheet" href="Assets/stylesheets/main.css">
-
-    <!-- Main JavaScript file -->
-    <script type="text/javascript" src="Assets/js/main.js"></script>
-</head>
-
-<body>
-    <head>
-        <section class="my_container">
-            <div class="nav-bar">
-                <img src="Assets/images/logo.png" alt="MBoutique Logo">
-                <nav class="main-nav">
-                    <ul id="mainNav">
-                        <li><a href="./index.html">Welcome</a></li>
-                        <li><a href="./macarons.html">Our Macarons</a></li>
-                        <li><a href="./gifts-parties.html">Gifts &amp; Parties</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-    </head>
-
-
-    <section class="my_container contact-content">
-        <div class="head-img">
-            <img src="./Assets/images/contact-image.png" alt="Large image displaying various color macarons">
-        </div>
-        <div class="left col-1-3">
-            <h1>Visit us!</h1>
-            <P>Monday - Friday &#124; 10am - 9pm<br>Saturday &#124; 10am - 8pm<br>Sunday &#124; 11am - 7pm<br>Closed Thanksgiving Day, Christmas Day and Easter Day</P>
-            <p>1625 Post St<br>San Francisco, CA 94115</p>
-            <p>949.800-3111</p>
-            <p><a href="mailto:orders@mboutique.com?Subject=Macaron%20Order">order@mboutique.com</a></p>
-            <p>Send your questions, comments and flavor suggestions or place an order!</p>
-        </div><!--
-
-       --><form class="center col-1-3" action="#" method="post">
-        <h1>Contact Form</h1>
-        <fieldset class="contact-form">
-            <label>
-                <input type="text" name="name" placeholder="Name" required>
-            </label>
-            <label>
-                <input type="text" name="email" placeholder="Email" required>
-            </label>
-            <label>
-                <input type="text" name="phone" placeholder="Phone" required>
-            </label>
-            <label>
-                <input type="text" name="subject" placeholder="Subject" required>
-            </label>
-            <label>
-                <textarea name="comments" placeholder="Message"></textarea>
-            </label>
-        </fieldset>
-        <button type="button" id="formBtn" class="btn">send</button>
-    </form><!--
-
-       --><div class="right col-1-3">
-        <img src="Assets/images/macarons-image.png" alt="multiple colored cartoon style macarons">
+<section class="my_container contact-content">
+    <div class="head-img">
+        <img ng-src="{{ cc.imgUrl }}" alt="Large image displaying various color macarons">
     </div>
-    </section>
+    <div class="left col-1-3">
+        <h1>Visit us!</h1>
+        <P>Monday - Friday &#124; 10am - 9pm<br>Saturday &#124; 10am - 8pm<br>Sunday &#124; 11am - 7pm<br>Closed Thanksgiving Day, Christmas Day and Easter Day</P>
+        <p>1625 Post St<br>San Francisco, CA 94115</p>
+        <p>949.800-3111</p>
+        <p><a href="mailto:orders@mboutique.com?Subject=Macaron%20Order">order@mboutique.com</a></p>
+        <p>Send your questions, comments and flavor suggestions or place an order!</p>
+    </div><!--
 
-    <footer class="my_container main-footer">
-        <section class="contact-info">
-            <img src="Assets/images/mail.png" alt="small envelope">
-            <small>order&#64;mboutique.com</small>
-        </section>
-        <section class="contact-info">
-            <img src="Assets/images/phone.png" alt="small telephone">
-            <small>949.800-3111</small>
-        </section>
-        <section class="contact-info">
-            <small>Follow us</small>
-            <img src="Assets/images/facebook.png" alt="small facebook logo">
-            <img src="Assets/images/twitter.png" alt="small twitter logo">
-        </section>
-        <small class="copyright">Copyright &copy;2015 MBoutique. All rights reserved.</small>
-    </footer>
-</body>
-</html>
+   --><form class="center col-1-3" action="#" method="post">
+    <h1>Contact Form</h1>
+    <fieldset class="contact-form">
+        <label>
+            <input type="text" name="name" placeholder="Name" required>
+        </label>
+        <label>
+            <input type="text" name="email" placeholder="Email" required>
+        </label>
+        <label>
+            <input type="text" name="phone" placeholder="Phone" required>
+        </label>
+        <label>
+            <input type="text" name="subject" placeholder="Subject" required>
+        </label>
+        <label>
+            <textarea name="comments" placeholder="Message"></textarea>
+        </label>
+    </fieldset>
+    <button type="button" id="formBtn" class="btn">send</button>
+</form><!--
+
+   --><div class="right col-1-3">
+    <img src="Assets/images/macarons-image.png" alt="multiple colored cartoon style macarons">
+</div>
+</section>
