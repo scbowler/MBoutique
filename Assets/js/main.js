@@ -27,7 +27,6 @@ app.config(function($routeProvider){
 app.controller('homeController', function(){
     this.imgUrl = 'Assets/images/welcome-image.png';
 
-
 }).controller('contactController', function(){
     this.imgUrl = 'Assets/images/contact-image.png';
 
